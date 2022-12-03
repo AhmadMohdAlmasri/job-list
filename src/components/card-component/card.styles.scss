@@ -1,0 +1,123 @@
+.card {
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border-left: 5px solid rgb(255, 255, 255);
+  box-shadow: 0px 10px 30px hsla(178, 66%, 23%, 0.211);
+  background-color: rgb(255, 255, 255);
+  width: 50vw;
+  min-width: 800px;
+  border-radius: 0.5em;
+  margin-top: 50px;
+  padding: 30px;
+
+  &:hover {
+    border-left: 5px solid hsl(180, 29%, 50%);
+  }
+
+  ul {
+    display: flex;
+    align-items: baseline;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li,
+  p {
+    margin: 0;
+    color: hsl(180, 29%, 50%);
+  }
+
+  .logo {
+    margin-right: 20px;
+  }
+
+  .companyInfo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    min-width: 300px;
+
+    .companyHeader {
+      // background-color: red;
+      li {
+        font-weight: 700;
+        font-size: large;
+        // background-color: blue;
+
+        &.companyName {
+          margin-right: 20px;
+        }
+
+        &.new,
+        &.featured {
+          color: white;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: small;
+          padding: 5px 8px 4px 8px;
+          border-radius: 15px;
+          background-color: hsl(180, 29%, 50%);
+        }
+
+        &.featured {
+          background-color: black;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+      padding: 15px 0;
+      color: hsl(180, 14%, 20%);
+
+      font-weight: 700;
+      font-size: 1.4em;
+      &:hover {
+        color: hsl(180, 29%, 50%);
+      }
+    }
+
+    .companyFooter {
+      justify-content: space-between;
+      li {
+        font-weight: 500;
+        font-size: medium;
+        color: hsl(180, 8%, 52%);
+        list-style: disc;
+        list-style-position: inside;
+
+        &:first-child {
+          list-style: none;
+        }
+
+        &:last-child {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+
+  .tags {
+    margin-left: auto;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+
+    li {
+      background-color: hsl(180, 52%, 96%);
+      padding: 10px;
+      border-radius: 5px;
+      font-size: small;
+
+      &:hover {
+        color: white;
+        background-color: hsl(180, 29%, 50%);
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,42 +1,40 @@
-body{
-   
-  margin:auto 0;
+body {
+  margin: auto 0;
   margin-top: 200px;
   margin-bottom: 50px;
   background-color: hsl(180, 52%, 96%);
   font-family: 'League Spartan';
   font-weight: bold;
 }
-.wraper{
+.wraper {
   display: flex;
   flex-direction: column;
 }
 
-.header{
+.header {
   position: fixed;
   width: 100%;
   display: flex;
-  
-  
+
   justify-content: center;
   margin: 0;
-  background: #63BABA;
-  
+  background: #63baba;
+
   height: 155px;
   margin-bottom: 100px;
   top: 0px;
 }
-.headerImage{
+.headerImage {
   margin-bottom: 50px;
   background-color: hsl(180, 29%, 50%);
-  background-image: url("./assets/bg-header-desktop.svg");
+  background-image: url('./assets/bg-header-desktop.svg');
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
-  height:155px;
+  height: 155px;
   width: 1430px;
 }
-.logo{
+.logo {
   margin-right: 20px;
 }
 
@@ -45,141 +43,127 @@ body{
   justify-content: center;
   
 } */
-.filterCard{
-  
-  
-  box-sizing:border-box;
-  
-  margin:0 auto;
+.filterCard {
+  box-sizing: border-box;
+
+  margin: 0 auto;
   margin-top: 120px;
   position: fixed;
   display: flex;
   align-items: center;
- 
+
   box-shadow: 0px 5px 15px hsla(178, 66%, 23%, 0.211);
   background-color: rgb(255, 255, 255);
-  
-  width: 50vw; 
+
+  width: 50vw;
   height: 70px;
   min-width: 800px;
-  border-radius: .5em;
+  border-radius: 0.5em;
   /* margin-top:-35px; */
   margin-bottom: 10px;
-  
 }
-.card{
-  box-sizing:border-box;
-  margin:auto;
+.card {
+  box-sizing: border-box;
+  margin: auto;
   display: flex;
   align-items: center;
   border-left: 5px solid rgb(255, 255, 255);
   box-shadow: 0px 10px 30px hsla(178, 66%, 23%, 0.211);
   background-color: rgb(255, 255, 255);
-  width: 50vw; 
+  width: 50vw;
   min-width: 800px;
-  border-radius: .5em;
+  border-radius: 0.5em;
   margin-top: 50px;
   padding: 30px;
 }
-.card:hover{
+.card:hover {
   border-left: 5px solid hsl(180, 29%, 50%);
-  
 }
-.companyInfo{
+.companyInfo {
   display: flex;
   flex-direction: column;
   margin-right: 30px;
   min-width: 300px;
- 
 }
-.companyName{
+.companyName {
   margin-right: 20px;
- 
 }
-li, p{
+li,
+p {
   margin: 0;
   color: hsl(180, 29%, 50%);
-  
-  
 }
-ul{
+ul {
   display: flex;
   align-items: baseline;
-  
+
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.tags{
+.tags {
   margin-left: auto;
   flex-wrap: wrap;
   gap: 20px 10px;
-  
 }
-.tags > li{
+.tags > li {
   background-color: hsl(180, 52%, 96%);
   padding: 10px;
   border-radius: 5px;
   font-size: small;
-  
 }
-.tags > li:hover{
+.tags > li:hover {
   color: white;
-  background-color:hsl(180, 29%, 50%);
+  background-color: hsl(180, 29%, 50%);
 }
-.companyHeader > li{
-  
+.companyHeader > li {
   font-weight: 700;
-  font-size:large;
+  font-size: large;
 }
-li.new,li.featured{
+li.new,
+li.featured {
   color: white;
   font-weight: 500;
-  text-transform:uppercase ;
+  text-transform: uppercase;
   font-size: small;
-  
+
   padding: 5px 8px 4px 8px;
   border-radius: 15px;
-  background-color:hsl(180, 29%, 50%);
+  background-color: hsl(180, 29%, 50%);
 }
-li.featured{
+li.featured {
   background-color: black;
   margin-left: 5px;
-
 }
 
-p{
+p {
   margin: 0;
   padding: 15px 0;
   color: hsl(180, 14%, 20%);
-  
-  font-weight: 700;
-  font-size:1.4em;
-}
-p:hover{
-  color: hsl(180, 29%, 50%);;
-}
-.companyFooter > li{
-  
-  font-weight: 500;
-  font-size:medium;
-  color: hsl(180, 8%, 52%);
-  list-style:disc ;
-  list-style-position: inside;
-  
-}
-.companyFooter > li:first-child{
-  list-style: none;
 
+  font-weight: 700;
+  font-size: 1.4em;
 }
-.companyFooter > li:last-child{
+p:hover {
+  color: hsl(180, 29%, 50%);
+}
+.companyFooter > li {
+  font-weight: 500;
+  font-size: medium;
+  color: hsl(180, 8%, 52%);
+  list-style: disc;
+  list-style-position: inside;
+}
+.companyFooter > li:first-child {
+  list-style: none;
+}
+.companyFooter > li:last-child {
   margin-right: 50px;
 }
-.companyFooter{
-  justify-content:space-between;
-  
+.companyFooter {
+  justify-content: space-between;
 }
-li.active{
+li.active {
   color: white;
-  background-color:hsl(180, 29%, 50%);
+  background-color: hsl(180, 29%, 50%);
 }
