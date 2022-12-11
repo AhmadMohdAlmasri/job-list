@@ -4,21 +4,18 @@ import { Vacancy } from '../../components/card-component/card.component';
 
 export type VCANCIES_INITIAL_STATE_TP = {
   currentVacancies: Vacancy[];
-  filteredVacancies: Vacancy[];
+  // filteredVacancies: Vacancy[];
   error: Error | null;
 };
 
 const VCANCIES_INITIAL_STATE: VCANCIES_INITIAL_STATE_TP = {
   currentVacancies: [],
-  filteredVacancies: [],
+  // filteredVacancies: [],
   error: null,
 };
 
 export const vacanciesReducer = (state = VCANCIES_INITIAL_STATE, action = {} as VacanciesActionTP) => {
   switch (action.type) {
-    case VACANCIES_ACTION_TYPES.SET_FILTERED_VACANCIES:
-      return { ...state, filteredVacancies: action.payload };
-
     case VACANCIES_ACTION_TYPES.FETCH_VACANCIES_SUCCESS:
       return { ...state, currentVacancies: action.payload };
 

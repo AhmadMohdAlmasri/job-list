@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Tag from '../tag-component/tag.component';
+import './tags.styles.scss';
 
 type TagsProps = {
   tags: string[];

@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import './companyLogo.styles.scss';
 
 type LogoProps = {
   logo: string;

@@ -1,0 +1,26 @@
+.filterTag {
+  // padding-right: 10px;
+  cursor: pointer;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  background-color: hsl(180, 52%, 96%);
+  //   padding-left: 10px;
+  border-radius: 5px;
+
+  font-size: small;
+
+  .tagName {
+    color: hsl(180, 29%, 50%);
+    padding: 0px 10px;
+  }
+  .deleteFilter {
+    background-color: hsl(180, 29%, 50%);
+    padding: 7px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    &:hover {
+      background-color: black;
+    }
+  }
+}

@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeFilter } from '../../store/filter/filter.action';
 import { TagProp } from '../tag-component/tag.component';
 import { FC } from 'react';
+import './filterTag.styles.scss';
 
 const FilterTag: FC<TagProp> = ({ tag }) => {
   const dispatch = useDispatch();

@@ -62,9 +62,9 @@ export const getCategoriesAndDocuments = async (): Promise<Vacancy[]> => {
   const querySnapshot = await getDocs(q);
 
   // return querySnapshot.docs.map((docSnapshot) => docSnapshot.data() as Vacancy);
+
   const vacancies = querySnapshot.docs.reduce((acc, docSnapshot) => {
     const { vacancies } = docSnapshot.data();
-    // console.log(obj);
     acc.push(...vacancies);
     return acc;
   }, [] as Vacancy[]);

@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { Vacancy } from '../card-component/card.component';
 import Card from '../card-component/card.component';
+import './cardList.styles.scss';
 
 export type Vacancies = {
   vacancies: Vacancy[];

@@ -1,0 +1,66 @@
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  min-width: 300px;
+
+  .companyHeader {
+    // background-color: red;
+    li {
+      font-weight: 700;
+      font-size: large;
+      // background-color: blue;
+
+      &.companyName {
+        margin-right: 20px;
+      }
+
+      &.new,
+      &.featured {
+        color: white;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: small;
+        padding: 5px 8px 4px 8px;
+        border-radius: 15px;
+        background-color: hsl(180, 29%, 50%);
+      }
+
+      &.featured {
+        background-color: black;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 15px 0;
+    color: hsl(180, 14%, 20%);
+
+    font-weight: 700;
+    font-size: 1.4em;
+    &:hover {
+      color: hsl(180, 29%, 50%);
+    }
+  }
+
+  .companyFooter {
+    justify-content: space-between;
+    li {
+      font-weight: 500;
+      font-size: medium;
+      color: hsl(180, 8%, 52%);
+      list-style: disc;
+      list-style-position: inside;
+
+      &:first-child {
+        list-style: none;
+      }
+
+      &:last-child {
+        margin-right: 50px;
+      }
+    }
+  }
+}

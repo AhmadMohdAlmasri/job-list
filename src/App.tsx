@@ -9,10 +9,10 @@ import { addCollectionAndDocuments, getCategoriesAndDocuments } from './utils/fi
 import { Vacancy } from './components/card-component/card.component';
 import { Vacancies } from './components/cardList-component/cardlist.component';
 import { useDispatch } from 'react-redux';
-import { fetchVacanciesSuccess } from './store/vacancies/vacancies.actions';
+import { fetchVacanciesStart, fetchVacanciesSuccess } from './store/vacancies/vacancies.actions';
 import { AnyAction } from 'redux';
 import { useSelector } from 'react-redux';
-import { selectCurrentVacancies } from './store/vacancies/vacancies.selector';
+import { selectCurrentVacancies, selectFilteredVacancies } from './store/vacancies/vacancies.selector';
 import { selectCurrentTags } from './store/filter/filter.slector';
 function App() {
   const dispatch = useDispatch();
@@ -29,18 +29,27 @@ function App() {
 
   useEffect(
     (): any => async () => {
-      const vacancies = await getCategoriesAndDocuments();
-      dispatch(fetchVacanciesSuccess(vacancies));
+      dispatch(fetchVacanciesStart());
     },
     []
   );
-  const tags: string[] = useSelector(selectCurrentTags);
-  const allVacancies = useSelector(selectCurrentVacancies);
+  // useEffect(
+  //   (): any => async () => {
+  //     const vacancies = await getCategoriesAndDocuments();
+  //     dispatch(fetchVacanciesSuccess(vacancies));
+  //   },
+  //   []
+  // );
 
-  const filteredVacancies = allVacancies.filter(({ role, level, languages, tools }) => {
-    return tags.length === 0 ? true : tags.every((tag) => [role, level, ...languages, ...tools].includes(tag));
-  });
-  console.log(filteredVacancies);
+  // const tags: string[] = useSelector(selectCurrentTags);
+  // const allVacancies = useSelector(selectCurrentVacancies);
+  const filteredVacancies = useSelector(selectFilteredVacancies);
+  // console.log(allVacancies);
+
+  // const filteredVacancies = allVacancies.filter(({ role, level, languages, tools }) => {
+  //   return tags.length === 0 ? true : tags.every((tag) => [role, level, ...languages, ...tools].includes(tag));
+  // });
+  // console.log(filterdeVac);
   return (
     <div className="App">
       <Header />
